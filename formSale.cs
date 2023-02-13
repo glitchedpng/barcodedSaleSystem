@@ -51,13 +51,14 @@ namespace SaleProject
                                 if (dataGridView1.Rows[i].Cells["Barcode"].Value.ToString() == foundproduct.Barkod)
                                 {
                                     dataGridView1.Rows[i].Cells["Miktar"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Miktar"].Value) + miktar;
-                                    dataGridView1.Rows[i].Cells["Toplam"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Toplam"].Value) +  miktar * Convert.ToDouble(foundproduct.SatisFiyat);
-
+                                    dataGridView1.Rows[i].Cells["Toplam"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Toplam"].Value) + miktar * Convert.ToDouble(foundproduct.SatisFiyat);
+                                    textBox2.Clear();
+                                    textBox2.Focus();
                                     isadded = true;
                                 }
                             }
                         }
-   
+
 
                         if (!isadded)
                         {
@@ -67,11 +68,15 @@ namespace SaleProject
                             dataGridView1.Rows[rowcount].Cells["Fiyat"].Value = foundproduct.SatisFiyat;
                             dataGridView1.Rows[rowcount].Cells["Barcode"].Value = foundproduct.Barkod;
                             dataGridView1.Rows[rowcount].Cells["Toplam"].Value = miktar * Convert.ToDouble(foundproduct.SatisFiyat);
+                            textBox2.Clear();
+                            textBox2.Focus();
                         }
                     }
                     else
                     {
                         MessageBox.Show("Bu barkoda sahip ürün ekli değil!");
+                        textBox2.Clear();
+                        textBox2.Focus();
                     }
                 }
             }
@@ -79,9 +84,12 @@ namespace SaleProject
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.ColumnIndex == 4)
+            if (e.ColumnIndex == 4)
             {
-                dataGridView1.Rows.RemoveAt(e.RowIndex);
+                if (dataGridView1.Rows.Count > 0)
+                    dataGridView1.Rows.RemoveAt(e.RowIndex);
+
+
             }
         }
 
