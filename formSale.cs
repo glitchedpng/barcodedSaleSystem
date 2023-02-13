@@ -13,8 +13,6 @@ namespace SaleProject
 {
     public partial class formSale : Form
     {
-        private const bool V = true;
-
         public formSale()
         {
             InitializeComponent();
@@ -59,7 +57,6 @@ namespace SaleProject
                             }
                         }
 
-
                         if (!isadded)
                         {
                             dataGridView1.Rows.Add();
@@ -71,8 +68,7 @@ namespace SaleProject
                             textBox2.Clear();
                             textBox2.Focus();
                         }
-                    }
-                    else
+                    }else
                     {
                         MessageBox.Show("Bu barkoda sahip ürün ekli değil!");
                         textBox2.Clear();
@@ -88,14 +84,7 @@ namespace SaleProject
             {
                 if (dataGridView1.Rows.Count > 0)
                     dataGridView1.Rows.RemoveAt(e.RowIndex);
-
-
             }
-        }
-
-        private void formSale_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -1607,7 +1607,6 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "formSale";
             this.Text = "SALE SYSTEM ";
-            this.Load += new System.EventHandler(this.formSale_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
