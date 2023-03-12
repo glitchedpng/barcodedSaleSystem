@@ -36,45 +36,82 @@ namespace SaleProject
                     if (db.Table.Any(x => x.Barkod == barcode))
                     {
                         var foundproduct = db.Table.FirstOrDefault(x => x.Barkod == barcode);
-                        var rowcount = dataGridView1.Rows.Count;
-                        var miktar = Convert.ToDouble(textBox6.Text);
-                        bool isadded = false;
-                        MessageBox.Show("Bulunan Ürün Adı: " + foundproduct.Urunad);
-
-
-                        if (dataGridView1.Rows.Count >= 0)
+                        GetProducttoList(foundproduct, barcode, Convert.ToDouble(textBox6.Text));
+                    }
+                    else
+                    {
+                        var barkod = Convert.ToInt32(barcode.Substring(0, 2));
+                        if (db.Terazi.Any(x => x.TeraziOnEk == barkod))
                         {
-                            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                            var foundproduct = db.Table.Where(x => x.Barkod == barcode.Substring(2, 5)).FirstOrDefault();
+                            if (foundproduct != null)
                             {
-                                if (dataGridView1.Rows[i].Cells["Barcode"].Value.ToString() == foundproduct.Barkod)
-                                {
-                                    dataGridView1.Rows[i].Cells["Miktar"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Miktar"].Value) + miktar;
-                                    dataGridView1.Rows[i].Cells["Toplam"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Toplam"].Value) + miktar * Convert.ToDouble(foundproduct.SatisFiyat);
-                                    textBox2.Clear();
-                                    textBox2.Focus();
-                                    isadded = true;
-                                }
+                                var amountofkg = Convert.ToDouble(barcode.Substring(7, 5)) / 1000;
+                                GetProducttoList(foundproduct, barcode.Substring(2, 5),amountofkg);
+                            }
+                            else
+                            {
+                                Console.Beep(900, 1000);
+                                MessageBox.Show("KG PRODUCT");
                             }
                         }
-
-                        if (!isadded)
+                        else
                         {
-                            dataGridView1.Rows.Add();
-                            dataGridView1.Rows[rowcount].Cells["ÜrünAdi"].Value = foundproduct.Urunad.ToString();
-                            dataGridView1.Rows[rowcount].Cells["Miktar"].Value = miktar;
-                            dataGridView1.Rows[rowcount].Cells["Fiyat"].Value = foundproduct.SatisFiyat;
-                            dataGridView1.Rows[rowcount].Cells["Barcode"].Value = foundproduct.Barkod;
-                            dataGridView1.Rows[rowcount].Cells["Toplam"].Value = miktar * Convert.ToDouble(foundproduct.SatisFiyat);
-                            textBox2.Clear();
-                            textBox2.Focus();
+                            Console.Beep(900, 1000);
+                            MessageBox.Show("PRODUCT");
+
                         }
-                    }else
-                    {
-                        MessageBox.Show("Bu barkoda sahip ürün ekli değil!");
+
                         textBox2.Clear();
                         textBox2.Focus();
                     }
                 }
+            }
+        }
+
+        public void FillButtons()
+        {
+            var quickp = new DatabaseEntities().HızlıUrun.ToList();
+
+            foreach (var item in quickp)
+            {
+                Button btn = Controls.Find("button" + (item.Id + 3), true).FirstOrDefault() as Button;
+                if(btn != null)
+                {
+                    btn.Text = item.urunAd + Environment.NewLine + item.Fiyat + "TL";
+                }
+            }
+
+        }
+        public void GetProducttoList(Urun urun, string barcode, double amount)
+        {
+            bool isadded = false;
+
+            if (dataGridView1.Rows.Count >= 0)
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    if (dataGridView1.Rows[i].Cells["Barcode"].Value.ToString() == urun.Barkod)
+                    {
+                        dataGridView1.Rows[i].Cells["Miktar"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Miktar"].Value) + amount;
+                        dataGridView1.Rows[i].Cells["Toplam"].Value = Convert.ToDouble(dataGridView1.Rows[i].Cells["Toplam"].Value) + amount * Convert.ToDouble(urun.SatisFiyat);
+                        textBox2.Clear();
+                        textBox2.Focus();
+                        isadded = true;
+                    }
+                }
+            }
+
+            if (!isadded)
+            {
+                dataGridView1.Rows.Add();
+                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells["ÜrünAdi"].Value = urun.Urunad.ToString();
+                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells["Miktar"].Value = amount;
+                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells["Fiyat"].Value = urun.SatisFiyat;
+                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells["Barcode"].Value = urun.Barkod;
+                dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells["Toplam"].Value = amount * Convert.ToDouble(urun.SatisFiyat);
+                textBox2.Clear();
+                textBox2.Focus();
             }
         }
 
@@ -84,6 +121,24 @@ namespace SaleProject
             {
                 if (dataGridView1.Rows.Count > 0)
                     dataGridView1.Rows.RemoveAt(e.RowIndex);
+            }
+        }
+
+        private void formSale_Load(object sender, EventArgs e)
+        {
+            FillButtons();
+        }
+
+        private void quickbutton_Click(object sender, EventArgs e)
+        {
+            var b = (Button)sender;
+            DatabaseEntities db = new DatabaseEntities();
+            var bid = Convert.ToInt32(b.Name.Substring(6, 1)) - 3;
+            var quickp = db.HızlıUrun.FirstOrDefault(a => a.Id == 1);
+            var p = db.Table.FirstOrDefault(x=>x.Barkod == quickp.Barkod);
+            if(quickp !=null)
+            {
+                GetProducttoList(p,p.Barkod, Convert.ToDouble(textBox6.Text));
             }
         }
     }

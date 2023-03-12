@@ -165,7 +165,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             this.splitContainer1.Panel2.Margin = new System.Windows.Forms.Padding(1);
             this.splitContainer1.Size = new System.Drawing.Size(1269, 782);
-            this.splitContainer1.SplitterDistance = 644;
+            this.splitContainer1.SplitterDistance = 642;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -182,7 +182,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(644, 782);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(642, 782);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -197,7 +197,7 @@
             this.panel1.ForeColor = System.Drawing.Color.DarkCyan;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(638, 104);
+            this.panel1.Size = new System.Drawing.Size(636, 104);
             this.panel1.TabIndex = 0;
             // 
             // checkBox1
@@ -311,7 +311,7 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(642, 535);
+            this.dataGridView1.Size = new System.Drawing.Size(640, 535);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -375,7 +375,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(644, 135);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(642, 135);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // button3
@@ -440,7 +440,7 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(260, 135);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(258, 135);
             this.tableLayoutPanel3.TabIndex = 6;
             // 
             // textBox3
@@ -453,7 +453,7 @@
             this.textBox3.Location = new System.Drawing.Point(0, 0);
             this.textBox3.Margin = new System.Windows.Forms.Padding(0);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(260, 38);
+            this.textBox3.Size = new System.Drawing.Size(258, 38);
             this.textBox3.TabIndex = 0;
             this.textBox3.Text = "1234";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -471,7 +471,7 @@
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(260, 108);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(258, 108);
             this.tableLayoutPanel11.TabIndex = 1;
             // 
             // tableLayoutPanel13
@@ -482,13 +482,13 @@
             this.tableLayoutPanel13.Controls.Add(this.textBox5, 0, 1);
             this.tableLayoutPanel13.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel13.Location = new System.Drawing.Point(131, 1);
+            this.tableLayoutPanel13.Location = new System.Drawing.Point(130, 1);
             this.tableLayoutPanel13.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel13.Name = "tableLayoutPanel13";
             this.tableLayoutPanel13.RowCount = 2;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.57895F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.42105F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(128, 106);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(127, 106);
             this.tableLayoutPanel13.TabIndex = 1;
             // 
             // textBox5
@@ -501,7 +501,7 @@
             this.textBox5.Location = new System.Drawing.Point(4, 79);
             this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(120, 19);
+            this.textBox5.Size = new System.Drawing.Size(119, 19);
             this.textBox5.TabIndex = 2;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -514,7 +514,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 75);
+            this.label2.Size = new System.Drawing.Size(121, 75);
             this.label2.TabIndex = 1;
             this.label2.Text = "Para Üstü";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -533,7 +533,7 @@
             this.tableLayoutPanel12.RowCount = 2;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.57895F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.42105F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(128, 106);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(127, 106);
             this.tableLayoutPanel12.TabIndex = 0;
             // 
             // label1
@@ -544,7 +544,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 75);
+            this.label1.Size = new System.Drawing.Size(121, 75);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ödenen(F12)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -559,7 +559,7 @@
             this.textBox1.Location = new System.Drawing.Point(4, 79);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 19);
+            this.textBox1.Size = new System.Drawing.Size(119, 19);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -579,7 +579,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
-            this.splitContainer2.Size = new System.Drawing.Size(621, 782);
+            this.splitContainer2.Size = new System.Drawing.Size(623, 782);
             this.splitContainer2.SplitterDistance = 394;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -626,7 +626,7 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(621, 394);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(623, 394);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // button28
@@ -640,10 +640,11 @@
             this.button28.Location = new System.Drawing.Point(497, 313);
             this.button28.Margin = new System.Windows.Forms.Padding(1);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(123, 80);
+            this.button28.Size = new System.Drawing.Size(125, 80);
             this.button28.TabIndex = 24;
             this.button28.Text = "BUTON";
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button27
             // 
@@ -660,6 +661,7 @@
             this.button27.TabIndex = 23;
             this.button27.Text = "BUTON";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button26
             // 
@@ -676,6 +678,7 @@
             this.button26.TabIndex = 22;
             this.button26.Text = "BUTON";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button25
             // 
@@ -692,6 +695,7 @@
             this.button25.TabIndex = 21;
             this.button25.Text = "BUTON";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button24
             // 
@@ -708,6 +712,7 @@
             this.button24.TabIndex = 20;
             this.button24.Text = "BUTON";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button23
             // 
@@ -720,10 +725,11 @@
             this.button23.Location = new System.Drawing.Point(497, 235);
             this.button23.Margin = new System.Windows.Forms.Padding(1);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(123, 76);
+            this.button23.Size = new System.Drawing.Size(125, 76);
             this.button23.TabIndex = 19;
             this.button23.Text = "BUTON";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button22
             // 
@@ -740,6 +746,7 @@
             this.button22.TabIndex = 18;
             this.button22.Text = "BUTON";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button21
             // 
@@ -756,6 +763,7 @@
             this.button21.TabIndex = 17;
             this.button21.Text = "BUTON";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button20
             // 
@@ -772,6 +780,7 @@
             this.button20.TabIndex = 16;
             this.button20.Text = "BUTON";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button19
             // 
@@ -788,6 +797,7 @@
             this.button19.TabIndex = 15;
             this.button19.Text = "BUTON";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button18
             // 
@@ -800,10 +810,11 @@
             this.button18.Location = new System.Drawing.Point(497, 157);
             this.button18.Margin = new System.Windows.Forms.Padding(1);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(123, 76);
+            this.button18.Size = new System.Drawing.Size(125, 76);
             this.button18.TabIndex = 14;
             this.button18.Text = "BUTON";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button17
             // 
@@ -820,6 +831,7 @@
             this.button17.TabIndex = 13;
             this.button17.Text = "BUTON";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button16
             // 
@@ -836,6 +848,7 @@
             this.button16.TabIndex = 12;
             this.button16.Text = "BUTON";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button15
             // 
@@ -852,6 +865,7 @@
             this.button15.TabIndex = 11;
             this.button15.Text = "BUTON";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button14
             // 
@@ -868,6 +882,7 @@
             this.button14.TabIndex = 10;
             this.button14.Text = "BUTON";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button13
             // 
@@ -880,10 +895,11 @@
             this.button13.Location = new System.Drawing.Point(497, 79);
             this.button13.Margin = new System.Windows.Forms.Padding(1);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(123, 76);
+            this.button13.Size = new System.Drawing.Size(125, 76);
             this.button13.TabIndex = 9;
             this.button13.Text = "BUTON";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button12
             // 
@@ -900,6 +916,7 @@
             this.button12.TabIndex = 8;
             this.button12.Text = "BUTON";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button11
             // 
@@ -916,6 +933,7 @@
             this.button11.TabIndex = 7;
             this.button11.Text = "BUTON";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button10
             // 
@@ -932,6 +950,7 @@
             this.button10.TabIndex = 6;
             this.button10.Text = "BUTON";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button9
             // 
@@ -948,6 +967,7 @@
             this.button9.TabIndex = 5;
             this.button9.Text = "BUTON";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button8
             // 
@@ -960,10 +980,11 @@
             this.button8.Location = new System.Drawing.Point(497, 1);
             this.button8.Margin = new System.Windows.Forms.Padding(1);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(123, 76);
+            this.button8.Size = new System.Drawing.Size(125, 76);
             this.button8.TabIndex = 4;
             this.button8.Text = "BUTON";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button7
             // 
@@ -980,6 +1001,7 @@
             this.button7.TabIndex = 3;
             this.button7.Text = "BUTON";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button6
             // 
@@ -996,6 +1018,7 @@
             this.button6.TabIndex = 2;
             this.button6.Text = "BUTON";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button5
             // 
@@ -1012,6 +1035,7 @@
             this.button5.TabIndex = 1;
             this.button5.Text = "BUTON";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // button4
             // 
@@ -1026,8 +1050,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(122, 76);
             this.button4.TabIndex = 0;
-            this.button4.Text = "BUTON";
+            this.button4.Text = "BUTON\r\n";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.quickbutton_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -1047,7 +1072,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(621, 384);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(623, 384);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1447,7 +1472,7 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(121, 382);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(122, 382);
             this.tableLayoutPanel9.TabIndex = 2;
             // 
             // button50
@@ -1461,7 +1486,7 @@
             this.button50.Location = new System.Drawing.Point(1, 286);
             this.button50.Margin = new System.Windows.Forms.Padding(1);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(119, 95);
+            this.button50.Size = new System.Drawing.Size(120, 95);
             this.button50.TabIndex = 3;
             this.button50.Text = "Adet";
             this.button50.UseVisualStyleBackColor = false;
@@ -1477,7 +1502,7 @@
             this.button49.Location = new System.Drawing.Point(1, 191);
             this.button49.Margin = new System.Windows.Forms.Padding(1);
             this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(119, 93);
+            this.button49.Size = new System.Drawing.Size(120, 93);
             this.button49.TabIndex = 2;
             this.button49.Text = "Ödenen";
             this.button49.UseVisualStyleBackColor = false;
@@ -1493,7 +1518,7 @@
             this.button48.Location = new System.Drawing.Point(1, 96);
             this.button48.Margin = new System.Windows.Forms.Padding(1);
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(119, 93);
+            this.button48.Size = new System.Drawing.Size(120, 93);
             this.button48.TabIndex = 1;
             this.button48.Text = "Barkod";
             this.button48.UseVisualStyleBackColor = false;
@@ -1509,7 +1534,7 @@
             this.button47.Location = new System.Drawing.Point(1, 1);
             this.button47.Margin = new System.Windows.Forms.Padding(1);
             this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(119, 93);
+            this.button47.Size = new System.Drawing.Size(120, 93);
             this.button47.TabIndex = 0;
             this.button47.Text = "Diğer Ürün";
             this.button47.UseVisualStyleBackColor = false;
@@ -1523,7 +1548,7 @@
             this.tableLayoutPanel10.Controls.Add(this.button52, 0, 1);
             this.tableLayoutPanel10.Controls.Add(this.button51, 0, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(496, 1);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(497, 1);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 4;
@@ -1531,7 +1556,7 @@
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(124, 382);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(125, 382);
             this.tableLayoutPanel10.TabIndex = 3;
             // 
             // button54
@@ -1545,7 +1570,7 @@
             this.button54.Location = new System.Drawing.Point(1, 286);
             this.button54.Margin = new System.Windows.Forms.Padding(1);
             this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(122, 95);
+            this.button54.Size = new System.Drawing.Size(123, 95);
             this.button54.TabIndex = 4;
             this.button54.Text = "Temizle";
             this.button54.UseVisualStyleBackColor = false;
@@ -1561,7 +1586,7 @@
             this.button53.Location = new System.Drawing.Point(1, 191);
             this.button53.Margin = new System.Windows.Forms.Padding(1);
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(122, 93);
+            this.button53.Size = new System.Drawing.Size(123, 93);
             this.button53.TabIndex = 3;
             this.button53.Text = "Fiş Yazdır";
             this.button53.UseVisualStyleBackColor = false;
@@ -1577,7 +1602,7 @@
             this.button52.Location = new System.Drawing.Point(1, 96);
             this.button52.Margin = new System.Windows.Forms.Padding(1);
             this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(122, 93);
+            this.button52.Size = new System.Drawing.Size(123, 93);
             this.button52.TabIndex = 2;
             this.button52.Text = "İade İşlemi";
             this.button52.UseVisualStyleBackColor = false;
@@ -1593,7 +1618,7 @@
             this.button51.Location = new System.Drawing.Point(1, 1);
             this.button51.Margin = new System.Windows.Forms.Padding(1);
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(122, 93);
+            this.button51.Size = new System.Drawing.Size(123, 93);
             this.button51.TabIndex = 1;
             this.button51.Text = "Tuş Düzenle";
             this.button51.UseVisualStyleBackColor = false;
@@ -1607,6 +1632,7 @@
             this.Controls.Add(this.splitContainer1);
             this.Name = "formSale";
             this.Text = "SALE SYSTEM ";
+            this.Load += new System.EventHandler(this.formSale_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

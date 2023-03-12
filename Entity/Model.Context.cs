@@ -26,5 +26,7 @@ namespace SaleProject.Entity
         }
     
         public virtual DbSet<Urun> Table { get; set; }
+        public virtual DbSet<Terazi> Terazi { get; set; }
+        public virtual DbSet<HızlıUrun> HızlıUrun { get; set; }
     }
 }
